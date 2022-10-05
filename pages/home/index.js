@@ -1,8 +1,3 @@
-/* Desenvolva sua lógica aqui ... */
-
-
-
-
 categories.forEach(element => {
     let listaCategorias = document.querySelector("#listaCategorias")
 
@@ -98,6 +93,3 @@ function gerarLi(objeto) {
 function padronizarString(elemento) {
     return elemento.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
 }
-
-
-

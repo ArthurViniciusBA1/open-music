@@ -1,4 +1,3 @@
-/* Desenvolva sua lógica aqui ... */
 darkMode()
 
 const botaoDm = document.getElementById("darkMode")
