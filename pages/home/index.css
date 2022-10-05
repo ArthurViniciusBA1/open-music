@@ -1,1 +1,170 @@
-/* Desenvolva sua estilização aqui ... */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>h1 {
+    font-size: var(--font-1);
+    color: var(--color-grey-1);
+}
+
+
+
+#darkMode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+main {
+    margin-top: 3.875rem;
+}
+
+.selecaoCategorias {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#listaCategorias {
+    display: flex;
+    column-gap: 1.85rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.filtroEstilos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+
+    width: fit-content;
+    height: 2rem;
+
+    color: var(--color-grey-1);
+
+    background: var(--color-grey-8);
+
+    border: 1px solid var(--color-grey-8);
+    border-radius: 4px;
+
+    font-size: var(--font-2);
+}
+
+.radio:checked+.filtroEstilos {
+    background: var(--color-grey-1);
+    color: var(--color-grey-9);
+
+    border: 1px solid var(--color-grey-1);
+}
+
+.escolhaDePreco {
+    margin-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.escolhaDePreco>div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.albuns {
+    margin-top: 3.75rem;
+}
+
+#listaAlbuns {
+    margin-top: 3.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3.9rem;
+    column-gap: 1.56rem;
+    justify-content: center;
+}
+
+#listaAlbuns>li {
+    display: flex;
+    width: 19.25rem;
+    flex-direction: column;
+}
+
+#listaAlbuns>li>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px 20px 16px;
+    gap: 20px;
+    background: var(--color-grey-8);
+
+    border-radius: 4px;
+}
+
+.informacoes {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.informacoes>span {
+    font-weight: 500;
+    font-size: var(--font-3);
+
+    color: var(--color-grey-2);
+}
+
+
+
+.comprar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo>h3 {
+    font-weight: 600;
+    font-size: var(--font-2);
+
+    color: var(--color-grey-1);
+}
+
+.comprar>span {
+    font-weight: 600;
+    font-size: var(--font-2);
+
+    color: var(--color-grey-1);
+}
+
+.comprar>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0.5rem;
+
+    width: 4.78rem;
+    height: 2rem;
+
+    background: var(--color-grey-7);
+
+    border: 1px solid var(--color-grey-7);
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: var(--font-3);
+
+    color: var(--color-grey-2);
+}
+
+
+footer {
+    height: 10rem;
+}
