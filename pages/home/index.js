@@ -28,12 +28,14 @@ const botoesFiltroMusicas = [...document.getElementsByClassName("filtroEstilos")
 const listaAlbuns = document.getElementById("listaAlbuns")
 let radio = [...document.getElementsByClassName("radio")]
 const range = document.getElementById("range")
+const valor = document.getElementById("valor")
 let filtro = "todos"
+
 
 gerarAlbuns()
 
-range.addEventListener('mouseup', () => {
-    gerarAlbuns()
+range.addEventListener('mouseup', (event) => {
+        gerarAlbuns()
 })
 
 botoesFiltroMusicas.forEach(element => {
@@ -45,8 +47,9 @@ botoesFiltroMusicas.forEach(element => {
 
 function gerarAlbuns() {
     listaAlbuns.innerHTML = ""
-
-    let valorMaximo = range.value
+    let valorMaximo = +range.value
+    let preco = valorMaximo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    valor.innerText = `Até ${preco}`
     let produtosFiltradosPorPreco = products.filter(object => object.price <= valorMaximo)
 
     let category = categories.map(padronizarString).indexOf(filtro)
@@ -86,6 +89,7 @@ function gerarLi(objeto) {
     `)
 
     li.id = `album_${objeto.id}`
+    li.classList.add("animation")
 
     return li
 }

@@ -17,9 +17,14 @@
 </body>
 
 <script>
-setTimeout(function () {
+    setTimeout(function () {
         window.location.href = "./pages/home/index.html"
     }, 3000)
-    </script>
+    const html = document.querySelector("html")
+    const preferenciaDm = localStorage.getItem("darkMode")
+    if (preferenciaDm) {
+        html.classList.toggle("darkMode")
+    }
+</script>
 
 </html>

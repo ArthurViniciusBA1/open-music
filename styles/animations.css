@@ -1,0 +1,13 @@
+@keyframes aparecer {
+    from {
+        transform: translateY(150px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.animation {
+    animation: aparecer 1s;
+}

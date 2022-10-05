@@ -1,15 +1,18 @@
+@import url(./styles/globalStyles.css);
+
 body {
     display: flex;
     height: 95vh;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .c-loader {
-    animation: is-rotating 1s infinite;
-    border: 15px solid #e5e5e5;
+    animation: is-rotating 0.75s infinite;
+    border: 15px solid var(--color-grey-4);
     border-radius: 50%;
-    border-top-color: #9747ff;
+    border-top-color: var(--color-brand-1);
     height: 150px;
     width: 150px;
 }
